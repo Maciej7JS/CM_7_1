@@ -18,4 +18,3 @@ test('login as regular user', async ({ page }) => {
 await login.logInUserWithCredentials(process.env.USER_LOGIN, process.env.USER_PASSWORD);
 expect(await login.returnWelcomeMessage()).toContain(`Witaj: ${process.env.USER_LOGIN}`);
 });
-
