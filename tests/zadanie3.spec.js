@@ -8,7 +8,7 @@ test('simple get request', async ({ request }) => {
 
 });
 
-test('simple post request', async ({ request })) => {
+test('simple post request', async ({ request }) => {
     const response = await request.post('/api/index.php?endpoint=products', {
 
    data: {
